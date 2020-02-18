@@ -2,13 +2,13 @@ version: '3'
 
 services:
   dubbo-provider:
-    image: 127.0.0.1:8850/dubbo-spring-cloud-demo/dubbo-provider:0.0.1-SNAPSHOT
+    image: hub.harbor.com:8850/dubbo-spring-cloud-demo/dubbo-provider:0.0.1-SNAPSHOT
     command:
     - "--nacos.address=192.168.0.103"
     restart: always
 
   dubbo-consumer:
-    image: 127.0.0.1:8850/dubbo-spring-cloud-demo/dubbo-consumer:0.0.1-SNAPSHOT
+    image: hub.harbor.com:8850/dubbo-spring-cloud-demo/dubbo-consumer:0.0.1-SNAPSHOT
     links:
     - dubbo-provider
     command:

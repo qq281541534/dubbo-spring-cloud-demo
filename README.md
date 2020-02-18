@@ -4,11 +4,11 @@
 
 - 将本地java docker环境打成tag:
 
-    ```docker tag daocloud.io/library/java 127.0.0.1:8850/dubbo-spring-cloud-demo/java:latest ```
+    ```docker tag daocloud.io/library/java hub.harbor.com:8850/dubbo-spring-cloud-demo/java:latest ```
 
 - 上传至harbor仓库:
 
-    ```docker push 127.0.0.1:8850/dubbo-spring-cloud-demo/java:latest```
+    ```docker push hub.harbor.com:8850/dubbo-spring-cloud-demo/java:latest```
 
 ## 将本地项目镜像上传harbor仓库
 
